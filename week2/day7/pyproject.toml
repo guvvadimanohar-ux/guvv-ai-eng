@@ -1,0 +1,26 @@
+[project]
+name = "day7"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "“guvvadimanohar-ux”", email = "guvvadimanohar@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "groq>=1.7.0",
+    "pydantic>=2.13.5",
+    "python-dotenv>=1.2.3",
+]
+
+[project.scripts]
+day7 = "day7:main"
+
+[build-system]
+requires = ["uv_build>=0.12.1,<0.13.0"]
+build-backend = "uv_build"
+
+[tool.uv.workspace]
+members = [
+    "reactchain.py",
+]
